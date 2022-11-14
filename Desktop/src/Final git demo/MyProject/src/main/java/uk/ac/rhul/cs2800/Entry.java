@@ -63,7 +63,8 @@ public class Entry {
    * @throws BadTypeException
    * 
    */
-  public Symbol getSymbol() throws BadTypeException {
+  @SuppressWarnings("unlikely-arg-type")
+public Symbol getSymbol() throws BadTypeException {
     if (!Entry.this.equals(this.other)) {
       throw new BadTypeException("this value is not valid");
     }

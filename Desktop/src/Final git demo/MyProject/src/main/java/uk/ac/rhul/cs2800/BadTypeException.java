@@ -7,6 +7,8 @@ package uk.ac.rhul.cs2800;
  *
  */
 public class BadTypeException extends Exception {
+  private static final long serialVersionUID = 1L;
+
   /**
    * it has a argument of error message.
    * 

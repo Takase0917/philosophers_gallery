@@ -5,9 +5,16 @@
     <property name="checkstyle.header.file" value="/Users/takasehigashiuezato/Desktop/src/Final git demo/.metadata/.plugins/org.eclipse.core.resources/.projects/MyProject/com.basistech.m2e.code.quality.checkstyleConfigurator/checkstyle-header-validate.txt"/>
     <property name="checkstyle.cache.file" value="${project_loc}/target/checkstyle-cachefile"/>
   </local-check-config>
+  <local-check-config name="googlePlus" location="src/main/resources/googlePlus.xml" type="project" description="">
+    <additional-data name="protect-config-file" value="false"/>
+  </local-check-config>
   <fileset name="java-sources-validate" enabled="true" check-config-name="maven-checkstyle-plugin validate" local="true">
     <file-match-pattern match-pattern="^src/main/java/.*\/.*\.java" include-pattern="true"/>
+    <file-match-pattern match-pattern="^src/main/java/.*\.properties" include-pattern="true"/>
     <file-match-pattern match-pattern="^src/main/resources/.*\.properties" include-pattern="true"/>
     <file-match-pattern match-pattern="^src/test/resources/.*\.properties" include-pattern="true"/>
+  </fileset>
+  <fileset name="googlePlus" enabled="true" check-config-name="googlePlus" local="true">
+    <file-match-pattern match-pattern=".java$" include-pattern="true"/>
   </fileset>
 </fileset-config>
