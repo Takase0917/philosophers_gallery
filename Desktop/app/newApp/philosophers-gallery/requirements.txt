@@ -1,0 +1,5 @@
+Flask==2.1.1
+Flask-Cors==3.1.1
+Flask-SocketIO==6.1.1
+python-socketio==6.1.1
+python-dotenv==0.19.3
